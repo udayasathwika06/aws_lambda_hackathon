@@ -49,4 +49,5 @@ This architecture allows complete stateless, serverless, scalable deployment wit
 {
   "message": "Your secret message"
 }
-[Clone the repository:](https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main)
+Clone the repository:
+[](https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main)
