@@ -1,3 +1,4 @@
+
 # aws_lambda_hackathon
 # 🔐 SecureLink: One-Time Encrypted Link Generator
 
@@ -51,5 +52,3 @@ This architecture allows complete stateless, serverless, scalable deployment wit
 {
   "message": "Your secret message"
 }
-
-
