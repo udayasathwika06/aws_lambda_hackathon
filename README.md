@@ -39,6 +39,8 @@ This architecture allows complete stateless, serverless, scalable deployment wit
 
 ---
 
+[ Clone the repository:](https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main )
+
 ## 📌 API Endpoints
 
 ### POST /generate
@@ -51,4 +53,3 @@ This architecture allows complete stateless, serverless, scalable deployment wit
 }
 
 
-[https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main](url)
