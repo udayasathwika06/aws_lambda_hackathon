@@ -1,8 +1,7 @@
 
-# aws_lambda_hackathon
 # 🔐 SecureLink: One-Time Encrypted Link Generator
 
-A serverless Python-based application that allows users to generate encrypted, one-time-use links to securely share confidential messages. Powered by *AWS Lambda* and *API Gateway*, SecureLink ensures privacy, encryption, and auto-destruction of sensitive content after first access.
+A serverless Python-based application that allows users to generate encrypted, one-time-use links to securely share confidential messages. Powered by AWS Lambda and API Gateway, SecureLink ensures privacy, encryption, and auto-destruction of sensitive content after first access.
 
 ---
 
@@ -20,10 +19,10 @@ A serverless Python-based application that allows users to generate encrypted, o
 
 | AWS Service        | Purpose                                      |
 |--------------------|----------------------------------------------|
-| *AWS Lambda*     | Executes encryption, link generation, and self-destruction logic |
-| *Amazon API Gateway* | Exposes HTTP endpoints to interact with Lambda |
-| *AWS CloudWatch* | Logs all requests and errors for monitoring |
-| *AWS IAM*        | Provides access control and execution permissions |
+| AWS Lambda         | Executes encryption, link generation, and self-destruction logic |
+| Amazon API Gateway | Exposes HTTP endpoints to interact with Lambda |
+| AWS CloudWatch     | Logs all requests and errors for monitoring   |
+| AWS IAM            | Provides access control and execution permissions |
 
 ---
 
@@ -40,15 +39,55 @@ This architecture allows complete stateless, serverless, scalable deployment wit
 
 ---
 
-[ Clone the repository:https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main](https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main )
+[🔗 Clone the repository](https://github.com/GUNDESANDEEP/AWS-Lambda-inOne-Time-Encrypted-Link-Generator/tree/main)
+
+---
 
 ## 📌 API Endpoints
 
-### POST /generate
-*Description:* Generate a one-time secure link.
+### `POST /generate`  
+**Description**: Generate a one-time secure link.
 
-*Request Body:*
+**Request Body**:
 ```json
 {
   "message": "Your secret message"
 }
+```
+
+**Response**:
+```json
+{
+  "link": "https://your-api-url/access/<uuid>",
+  "message": "🔗 One-time link generated!"
+}
+```
+
+### Response (First access):
+```json
+{
+  "decrypted_message": "Your secret message",
+  "status": "✅ Message Retrieved"
+}
+```
+
+### Response (After use):
+```json
+{
+  "error": "❌ This link has expired or does not exist."
+}
+```
+
+---
+
+## 👥 Team Members
+
+1. Gunde Sandeep (lead)  
+2. Chitti Udaya Sathwika  
+3. Kunchala Rishitha  
+4. Thatikonda Sasya
+
+---
+
+## 📝 License  
+This project is licensed under the MIT License.
